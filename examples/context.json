@@ -1,0 +1,607 @@
+{
+  "synthetic": true,
+  "records": [
+    {
+      "external_id": "d0",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 0",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 1,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d1",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 0",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 2,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d2",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 0",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 3,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d3",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 1",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 4,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d4",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 1",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 5,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d5",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 1",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 6,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d6",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 2",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 7,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d7",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 2",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 1,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d8",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 2",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 2,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d9",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 3",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 3,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d10",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 3",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 4,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d11",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 3",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 5,
+        "arrived_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d12",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 4",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 6,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d13",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 4",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 7,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d14",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 4",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 1,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d15",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 5",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 2,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d16",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 5",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 3,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d17",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 5",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 4,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d18",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 6",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 5,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d19",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 6",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 6,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d20",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 6",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 7,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d21",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 7",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 1,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d22",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 7",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 2,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d23",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 7",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 3,
+        "arrived_at": "2026-09-08T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d24",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 8",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 4,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d25",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 8",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 5,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d26",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 8",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 6,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d27",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 9",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 7,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d28",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 9",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 1,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d29",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 9",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 2,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d30",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 10",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 3,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d31",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 10",
+      "metadata": {
+        "source_group": "old",
+        "minutes": 4,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d32",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 10",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 5,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d33",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 11",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 6,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d34",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 11",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 7,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d35",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 11",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 1,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d36",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 12",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 2,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d37",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 12",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 3,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d38",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 12",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 4,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d39",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 13",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 5,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d40",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 13",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 6,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d41",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 13",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 7,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d42",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 14",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 1,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d43",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 14",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 2,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d44",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 14",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 3,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d45",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 15",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 4,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d46",
+      "version": 1,
+      "text": "calibration procedure stable sensor section 15",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 5,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    },
+    {
+      "external_id": "d47",
+      "version": 1,
+      "text": "manual contact synthetic@example.com section 15",
+      "metadata": {
+        "source_group": "new",
+        "minutes": 6,
+        "arrived_at": "2026-10-01T00:00:00Z"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "external_id": "d0",
+      "decision": "accept",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d1",
+      "decision": "reject",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d2",
+      "decision": "accept",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d3",
+      "decision": "reject",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d4",
+      "decision": "accept",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d5",
+      "decision": "reject",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d6",
+      "decision": "accept",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d7",
+      "decision": "reject",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d8",
+      "decision": "accept",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d9",
+      "decision": "reject",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d10",
+      "decision": "accept",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d11",
+      "decision": "reject",
+      "decided_at": "2026-09-02T00:00:00Z"
+    },
+    {
+      "external_id": "d12",
+      "decision": "accept",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d13",
+      "decision": "reject",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d14",
+      "decision": "accept",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d15",
+      "decision": "reject",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d16",
+      "decision": "accept",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d17",
+      "decision": "reject",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d18",
+      "decision": "accept",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d19",
+      "decision": "reject",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d20",
+      "decision": "accept",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d21",
+      "decision": "reject",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d22",
+      "decision": "accept",
+      "decided_at": "2026-09-09T00:00:00Z"
+    },
+    {
+      "external_id": "d23",
+      "decision": "reject",
+      "decided_at": "2026-09-09T00:00:00Z"
+    }
+  ]
+}
