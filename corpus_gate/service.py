@@ -51,7 +51,7 @@ class CorpusGate:
         from corpus_gate.dedup import diagnostics
         from corpus_gate.ingest import bundles, validation as intake_validation
         from corpus_gate.releases import validation, statistics
-        from corpus_gate.review import sampling
+        from corpus_gate.review import sampling, round
         return {
             'intake.preflight': (bind(intake_validation.preflight), 'source_id profile_id records context', ''),
             'intake.manifest': (bind(intake_validation.manifest), 'source_id', ''),
@@ -68,6 +68,12 @@ class CorpusGate:
             'release.histogram': (bind(statistics.length_histogram), 'release_id boundaries', ''),
             'review.sample': (bind(sampling.stratified_queue), 'seed', 'total by include_accepted'),
             'review.validate_sample': (bind(sampling.validate_sample), 'sample', ''),
+            'review.round_plan': (bind(round.plan), 'round_id run_id cutoff budget_minutes seed', 'exploration_fraction source_floor floor_documents model thresholds default_minutes coverage_weight'),
+            'review.round_create': (bind(round.create), 'round_id run_id cutoff budget_minutes seed', 'exploration_fraction source_floor floor_documents model thresholds default_minutes coverage_weight'),
+            'review.round_get': (bind(round.get), 'round_id', ''),
+            'review.round_evidence': (bind(round.evidence), 'round_id', ''),
+            'review.round_validate': (bind(round.validate), 'round_id', ''),
+            'review.round_close': (bind(round.close), 'round_id', ''),
             'diagnostics.pairs': (bind(diagnostics.evaluate_pairs), 'pairs', 'numerator denominator size'),
             'diagnostics.sweep': (bind(diagnostics.sweep), 'pairs thresholds', 'size'),
             'diagnostics.bridges': (bind(diagnostics.bridges), 'run_id', ''),

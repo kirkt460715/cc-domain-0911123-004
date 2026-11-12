@@ -1,6 +1,7 @@
 import datetime
 import hashlib
 import json
+import math
 import re
 
 
@@ -28,6 +29,15 @@ def integer(value, field, minimum=0, maximum=1000000):
     if type(value) is not int or not minimum <= value <= maximum:
         fail('integer', 'Expected bounded integer', field=field)
     return value
+
+
+def number(value, field, minimum=0.0, maximum=1.0):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        fail('number', 'Expected bounded number', field=field)
+    result = float(value)
+    if not math.isfinite(result) or not minimum <= result <= maximum:
+        fail('number', 'Expected bounded number', field=field)
+    return result
 
 
 def text(value, field, maximum=2000):

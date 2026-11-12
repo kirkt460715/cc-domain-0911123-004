@@ -8,6 +8,7 @@ from corpus_gate.ingest import sources, formats, bundles
 from corpus_gate.text import profiles
 from corpus_gate.dedup import clusters
 from corpus_gate.releases import manifests, exporting, transfer
+from corpus_gate.review import round as review_round
 
 
 def read(path, maximum=33554432):
@@ -88,6 +89,9 @@ def parser():
     sub.add_parser('operations')
     demo = sub.add_parser('demo')
     demo.add_argument('--fixture', required=True)
+    review_round = sub.add_parser('review-round')
+    review_round.add_argument('action', choices=['plan', 'create', 'get', 'evidence', 'validate', 'close'])
+    review_round.add_argument('--input', required=True)
     return root
 
 
@@ -164,6 +168,15 @@ def execute(app, args):
         return [{'operation': key, 'required': required.split(), 'optional': optional.split()} for key, (_, required, optional) in sorted(app.operations().items())]
     if args.command == 'demo':
         return demonstrate(app, json_file(args.fixture))
+    if args.command == 'review-round':
+        return app.dispatch({
+            'plan': 'review.round_plan',
+            'create': 'review.round_create',
+            'get': 'review.round_get',
+            'evidence': 'review.round_evidence',
+            'validate': 'review.round_validate',
+            'close': 'review.round_close',
+        }[args.action], json_file(args.input))
     fail('command', 'Unsupported command')
 
 

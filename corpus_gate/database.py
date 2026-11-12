@@ -26,6 +26,9 @@ CREATE TABLE IF NOT EXISTS releases(release_id TEXT PRIMARY KEY,revision INTEGER
 CREATE TABLE IF NOT EXISTS release_members(release_id TEXT NOT NULL REFERENCES releases(release_id),document_id TEXT NOT NULL,cluster_id TEXT NOT NULL,split TEXT NOT NULL,ordinal INTEGER NOT NULL,payload TEXT NOT NULL,digest TEXT NOT NULL,PRIMARY KEY(release_id,document_id));
 CREATE TABLE IF NOT EXISTS release_events(event_id INTEGER PRIMARY KEY AUTOINCREMENT,release_id TEXT NOT NULL,action TEXT NOT NULL,body TEXT NOT NULL,at TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS audit(position INTEGER PRIMARY KEY AUTOINCREMENT,action TEXT NOT NULL,payload TEXT NOT NULL,previous_hash TEXT NOT NULL,entry_hash TEXT NOT NULL,at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS review_rounds(round_id TEXT PRIMARY KEY,state TEXT NOT NULL,run_id TEXT NOT NULL,cutoff_at TEXT NOT NULL,budget_minutes INTEGER NOT NULL,seed TEXT NOT NULL,definition TEXT NOT NULL,request_digest TEXT NOT NULL,evidence TEXT NOT NULL,digest TEXT NOT NULL,corpus_revision INTEGER NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS review_round_queue(round_id TEXT NOT NULL REFERENCES review_rounds(round_id),document_id TEXT NOT NULL REFERENCES documents(document_id),ordinal INTEGER NOT NULL,document_revision INTEGER NOT NULL,cluster_id TEXT NOT NULL,PRIMARY KEY(round_id,document_id));
+CREATE TABLE IF NOT EXISTS review_round_events(event_id INTEGER PRIMARY KEY AUTOINCREMENT,round_id TEXT NOT NULL REFERENCES review_rounds(round_id),action TEXT NOT NULL,body TEXT NOT NULL,at TEXT NOT NULL);
 '''
 
 

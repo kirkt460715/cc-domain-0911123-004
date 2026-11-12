@@ -47,6 +47,22 @@ def check(db):
                     problems.append({'code': 'release_leakage', 'release_id': row['release_id']})
             except GateError as exc:
                 problems.append(exc.as_dict())
+        from corpus_gate.review import round as review_round
+        for row in db.all('SELECT round_id FROM review_rounds ORDER BY round_id'):
+            try:
+                stored = review_round.get(db, row['round_id'])
+                evidence = stored['evidence']
+                if not evidence['selection']['constraints']['minute_budget_respected']:
+                    problems.append({'code': 'review_round_budget', 'round_id': row['round_id']})
+                if evidence['selection']['used_minutes'] != evidence['selection']['budget_minutes'] - evidence['selection']['remaining_minutes']:
+                    problems.append({'code': 'review_round_minutes', 'round_id': row['round_id']})
+                for item in evidence['selection']['chosen']:
+                    if item['minutes'] > evidence['selection']['budget_minutes']:
+                        problems.append({'code': 'review_round_document_budget', 'round_id': row['round_id'], 'document_id': item['document_id']})
+            except GateError as exc:
+                problem = exc.as_dict()
+                problem['round_id'] = row['round_id']
+                problems.append(problem)
         return {'ok': not problems, 'problems': problems, 'database': database, 'audit': audit, 'corpus_revision': db.revision()}
 
 
@@ -54,7 +70,8 @@ def overview(db):
     states = db.all('SELECT d.state,COUNT(*) AS count FROM documents d JOIN document_heads h ON h.document_id=d.document_id GROUP BY d.state ORDER BY d.state')
     batches = db.all('SELECT state,COUNT(*) AS count FROM batches GROUP BY state ORDER BY state')
     releases = db.all('SELECT state,COUNT(*) AS count FROM releases GROUP BY state ORDER BY state')
-    return {'corpus_revision': db.revision(), 'documents': {row['state']: row['count'] for row in states}, 'batches': {row['state']: row['count'] for row in batches}, 'releases': {row['state']: row['count'] for row in releases}, 'sources': db.scalar('SELECT COUNT(*) FROM sources'), 'chunks': db.scalar('SELECT COUNT(*) FROM chunks'), 'cluster_runs': db.scalar('SELECT COUNT(*) FROM cluster_runs')}
+    rounds = db.all('SELECT state,COUNT(*) AS count FROM review_rounds GROUP BY state ORDER BY state')
+    return {'corpus_revision': db.revision(), 'documents': {row['state']: row['count'] for row in states}, 'batches': {row['state']: row['count'] for row in batches}, 'releases': {row['state']: row['count'] for row in releases}, 'review_rounds': {row['state']: row['count'] for row in rounds}, 'sources': db.scalar('SELECT COUNT(*) FROM sources'), 'chunks': db.scalar('SELECT COUNT(*) FROM chunks'), 'cluster_runs': db.scalar('SELECT COUNT(*) FROM cluster_runs')}
 
 
 def quality_report(db, source_id=None):
